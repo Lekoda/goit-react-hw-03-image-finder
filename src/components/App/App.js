@@ -81,13 +81,7 @@ export default class App extends Component {
           <Modal image={largeImage} onModalClose={this.handleModalClose} />
         )}
         {showLoader && <Loader />}
-        <ToastContainer
-          theme="colored"
-          autoClose={4000}
-          closeOnClick
-          pauseOnHover={false}
-          pauseOnFocusLoss
-        />
+        <ToastContainer />
       </div>
     );
   }
