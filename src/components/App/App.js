@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as API from '../Utils/API';
 import { Searchbar } from 'components/Searchbar/Searchbar';
@@ -81,6 +81,13 @@ export default class App extends Component {
           <Modal image={largeImage} onModalClose={this.handleModalClose} />
         )}
         {showLoader && <Loader />}
+        <ToastContainer
+          theme="colored"
+          autoClose={4000}
+          closeOnClick
+          pauseOnHover={false}
+          pauseOnFocusLoss
+        />
       </div>
     );
   }
