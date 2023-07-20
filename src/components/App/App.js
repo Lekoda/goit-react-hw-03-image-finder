@@ -52,7 +52,7 @@ export default class App extends Component {
 
   handleFormSubmit = query => {
     if (query !== this.state.query) {
-      this.setState({ query, images: [] });
+      this.setState({ query, images: [], page: 1 });
     }
   };
 
